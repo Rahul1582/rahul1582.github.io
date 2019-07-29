@@ -115,7 +115,7 @@ h3{
 .hero-image4 {
   width:100%; 
   background-image: url("attractive-backdrop-background-988872.jpg");
-  height:1200px;
+  height:800px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -331,6 +331,13 @@ input[type=submit]:hover {
     margin-top: 0;
   }
 }
+@media screen and (max-width: 600px)
+{.img-res{
+    width:120px;
+    height:100px;
+    margin-left: auto;
+    margin-right: auto;
+}}
 </style>
 </head>
 <body>
@@ -403,7 +410,7 @@ input[type=submit]:hover {
      <div class="hero-text3">
      <h1 style="font-size:50px; color:orange;">MY SKILLS</h1>
      </div>
-     <br><br><br><br><br><br><br>
+     <br><br><br><br><br><br><br><br>
      <div class="container-fluid">
          <div class="progress">
           <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
@@ -411,47 +418,53 @@ input[type=submit]:hover {
           </div>
           </div>
           <br><br>
-          <div class="progress">
-            <div class="progress-bar" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="width:30%">
-            (GIT) 30%
-            </div>
-          </div>
-          <br><br>
-          <div class="progress">
-            <div class="progress-bar" role="progressbar;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:50%">
-            (DATA VISUALISATION) 50%
-            </div>
-          </div>
-          <br><br>
-          <div class="progress">
-            <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:60%">
-            (PANDAS) 60%
-            </div>
-          </div>
-          <br><br>
-          <div class="progress">
-            <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" style="width:80%">
-            (CSS) 80%
-            </div>
-          </div>
-          <br><br>
-          <div class="progress">
+           <div class="progress">
             <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
             (HTML) 70%
             </div>
           </div>
           <br><br>
           <div class="progress">
-           <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuwmax="100" style="width:50%">
-          (PYHTON) 50%
-          </div>
-          </div>
+            <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" style="width:80%">
+             (CSS) 80%
+             </div>
+            </div>
           <br><br>
-          <div class="progress">
+           <div class="progress">
             <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valemain="0" aria-valuemax="100" style="width:60%">
             (BOOTSTRAP) 60%
             </div>
           </div>
+          <br><br>
+          <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuwmax="100" style="width:50%">
+               (PYHTON) 50%
+               </div>
+               </div>
+               <br><br>
+          <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="width:30%">
+                (GIT) 30%
+                </div>
+              </div>
+              <br><br>
+            <div class="progress">
+                <div class="progress-bar" role="progressbar;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:50%">
+                (DATA VISUALISATION) 50%
+                </div>
+              </div>
+              <br><br>
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:60%">
+                (PANDAS) 60%
+                </div>
+              </div>
+               <br><br>
+            <div class='progress'>
+                <div class='progress-bar' role='progressbar' aria-valuenow='50' ariavaluemin='0' aria-valuemax='100' style='width:50%'>
+                (LINUX) 50%
+                </div>
+               </div>
       </div>
 
 </div>
@@ -465,56 +478,69 @@ input[type=submit]:hover {
        <h1 style="font-size:30px; color:orangered;">CERTIFICATES</h1> 
       </div>
       <div class="container-fluid">
-      <div class="container gallery-container">
+      <div class="container gallery-container-fluid">
         <div class="tz-gallery">
-          <br><br><br><br><br><br><br><br><br>
-          <div class="row mb-3">
-            <div class="col-lg-4">
+          <br><br><br><br><br>
+          <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-6">
                 <div class="card">
+                    <div class='img-res'>
                     <a class="lightbox" href="Python For Data Science Coursera.PNG">
                     <img src="Python For Data Science Coursera.PNG" alt="Park" class="card-img-top">
                     </a>
+                    </div>
+                </div>
+            </div>
+             
+            <div class="col-lg-4 col-md-4 col-sm-6">
+                <div class="card">
+                    <div class="img-res">
+                    <a class="lightbox" href="Linux Workshop.PNG">
+                    <img src="Linux Workshop.PNG" alt="Park" class="card-img-top">
+                    </a>
+                    </div>
                 </div>
             </div>
              
             <div class="col-lg-4">
                 <div class="card">
-                    <a class="lightbox" href=".PNG">
-                    <img src="file:///C:/Users/hp/Desktop/Web%20Development/Data%20Visualisation%20With%20Python.PNG" alt="Park" class="card-img-top">
+                    <div class="img-res">
+                    <a class="lightbox" href="Data Visualisation With Python.PNG">
+                    <img src="Data Visualisation With Python.PNG" alt="Park" class="card-img-top">
                     </a>
-                </div>
-            </div>
-             
-            <div class="col-lg-4">
-                <div class="card">
-                    <a class="lightbox" href="file:///C:/Users/hp/Desktop/Web%20Development/Data%20Analysis%20Udemy.PNG">
-                    <img src="file:///C:/Users/hp/Desktop/Web%20Development/Data%20Analysis%20Udemy.PNG" alt="Park" class="card-img-top">
-                    </a>
+                    </div>
                 </div>
             </div>
         </div>
+        <br><br>
           <div class="row"> 
             <div class="col-lg-4">
                 <div class="card">
-                    <a class="lightbox" href="file:///C:/Users/hp/Desktop/Web%20Development/Python%20for%20Data%20Science%20Cognitive%20classes.PNG">
-                    <img src="file:///C:/Users/hp/Desktop/Web%20Development/Python%20for%20Data%20Science%20Cognitive%20classes.PNG" alt="Park" class="card-img-top">
+                    <div class='img-res'>
+                    <a class="lightbox" href="Data Analysis Udemy.PNG">
+                    <img src="Data Analysis Udemy.PNG" alt="Park" class="card-img-top">
                     </a>
+                    </div>
                 </div>
             </div>
              
             <div class="col-lg-4">
                 <div class="card">
-                    <a class="lightbox" href="file:///C:/Users/hp/Desktop/Web%20Development/Linux%20Workshop.PNG">
-                    <img src="file:///C:/Users/hp/Desktop/Web%20Development/Linux%20Workshop.PNG" alt="Park" class="card-img-top">
+                    <div class="img-res">
+                    <a class="lightbox" href="Python for Data Science Cognitive classes.PNG">
+                    <img src="Python for Data Science Cognitive classes.PNG" alt="Park" class="card-img-top">
                     </a>
+                    </div>
                 </div>
             </div>
              
             <div class="col-lg-4">
                 <div class="card">
-                    <a class="lightbox" href="file:///C:/Users/hp/Desktop/Web%20Development/Certificate%20C++%20Sololearn%20Image.jpg">
-                    <img src="file:///C:/Users/hp/Desktop/Web%20Development/Certificate%20C++%20Sololearn%20Image.jpg" alt="Park" class="card-img-top">
+                    <div class="img-res">
+                    <a class="lightbox" href="Certificate C++ Sololearn Image.jpg">
+                    <img src="Certificate C++ Sololearn Image.jpg" alt="Park" class="card-img-top">
                     </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -590,7 +616,7 @@ input[type=submit]:hover {
               </form>
             </div>
             <div class="column">
-                <img src="file:///C:/Users/hp/Desktop/Web%20Development/Capture.png" style="width:100%">
+                <img src="Capture.png" style="width:100%">
               </div>
           </div>
         </div>
