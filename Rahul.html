@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="./Untitled-2_files/baguetteBox.min.css">
     
-     <script src="js/jquery.js"></script>
+         <script src="js/jquery.js"></script>
     <script src=js/bootstrap.js></script>
     
      <link rel="stylesheet" type="text/css" href="css/main.css">
@@ -131,8 +131,13 @@ h3{
   background-size: cover;
   position: relative;
 }
+
+@media only screen and (max-width:600px){
+    .hero-image5{
+        height:2000px;
+    }
+}
 .hero-image6 {
-  top:2%;
   width:100%; 
   background-image: url("art-background-blue-268415.jpg");
   height:1000px;
@@ -141,7 +146,25 @@ h3{
   background-size: cover;
   position: relative;
 }
+.hero-image7{
+  width:100%; 
+  background-image: url("blurred-background-design-fence-683402.jpg");
+  height:800px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
 
+}
+.hero-text7{
+  text-align:left;
+  position:absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  background-color: aqua;
+}
 .hero-text1 {
   max width: 960px;
   text-align:center;
@@ -189,6 +212,11 @@ h3{
   transform: translate(-50%, -50%);
   color: white;
   background-color: aqua;
+}
+@media only screen and (max-width:600px){
+    .hero-text5{
+       top:3%;
+    }
 }
 .hero-text6{
   text-align:left;
@@ -368,6 +396,14 @@ input[type=submit]:hover {
   left:50%;
 }
 
+#image-gallery .modal-footer{
+  display: block;
+}
+
+.thumb{
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
 </style>
 </head>
 <body>
@@ -383,6 +419,9 @@ input[type=submit]:hover {
     <li class="nav-item">
         <a class="nav-link font-weight-bold" style="font-size:25px; color:yellowgreen;" href="#about me">ABOUT ME</a>
       </li>  
+    <li class='nav-item'>
+      <a class='nav-link font-weight-bold' style='font-size:25px; color:yellowgreen;' href='#resume'>RESUME</a>
+    </li>  
    <li class="nav-item">
        <a class="nav-link font-weight-bold" style="font-size:25px; color:yellowgreen" href="#my skills">MY SKILLS</a>    
     </li>
@@ -439,6 +478,33 @@ input[type=submit]:hover {
 </section>
 </div>
 
+<div class='row'>
+<section id='resume' class='container-fluid'>
+<div class='hero-image7'>
+  <div class='hero-text7'>
+      <h1 style="font-size:50px; color:orange;" class='revealOnScroll wow zoomInDown'>RESUME</h1>
+  </div>
+  <br><br><br><br><br><br><br>
+  <div class='container'>
+      <div class="card-deck">
+          <div class="card bg-primary">
+            <div class="card-body text-center">
+              <p class="card-text" style="font-size:30px; font-weight: bolder">I am pursuing Integrated MSc. Maths And Computing In BIRLA INSTITUTE OF TECHNOLOGY,MESRA,RANCHI</p>
+              <p class="card-text" style="font-size: 20px">Currently I am in 2nd Year..</p>
+              <p class="card-text">Some more text to increase the height</p>
+              <p class="card-text">Some more text to increase the height</p>
+            </div>
+          </div>
+  </div>
+</div>
+
+
+
+</section> 
+
+
+
+</div>
 <div class="row">
 <section id="my skills" class="container-fluid">
 <div class="hero-image3">
@@ -598,38 +664,95 @@ input[type=submit]:hover {
   <h1 style="font-size:40px; color:brown" class='revealOnScroll wow zoomInDown'>GALLERY</h1>
   </div>
   <br>
-  <br><br><br><br>
-  <div class="row">
-      <div class="col-md-4">
-        
-        <div class="thumbnail">
-            <div class='img-res'>
-            <img src="photo-1485518994577-6cd6324ade8f.jpg" alt="Nature" style="width:450px; height:600px" class="revealOnScroll wow bounce" data-wow-delay="1s">
-             </div>
-             </div>
-    </div>
-    <div class="col-md-4">
-      
-      <div class="thumbnail">
-          <div class='img-res'>
-           <img src="photo-1540809799-78dbc7a3746d.jpg" alt="Nature" style="width:450px; height:600px" class="revealOnScroll wow bounce" data-wow-delay="1.5s">
-           </div>
-           </div>
-           </div>
-    <div class="col-md-4">`
-      
-     <div class="thumbnail">
-        <div class='img-res'>
-       <img src="photo-1507643179773-3e975d7ac515.jpg" alt="Image" style="width:450px; height:600px" class='revealOnScroll wow bounce' data-wow-delay="2s">
+  <br><br><br><br><br>
+  <div class="container">
+      <div class="row">
+        <div class="row">
+                <div class="col-lg-4 col-md-3 col-xs-6 thumb">
+                    <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title=""
+                       data-image="photo-1551350125-b3846dc59c0d.jpg"
+                       data-target="#image-gallery">
+                        <img class="img-thumbnail"
+                             src="photo-1551350125-b3846dc59c0d.jpg"
+                             alt="Another alt text">
+                    </a>
+                </div>
+
+                <div class="col-lg-4 col-md-3 col-xs-6 thumb">
+                    <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title=""
+                       data-image="photo-1485518994577-6cd6324ade8f.jpg"
+                       data-target="#image-gallery">
+                        <img class="img-thumbnail"
+                             src="photo-1485518994577-6cd6324ade8f.jpg"
+                             alt="Another alt text" >
+                    </a>
+                </div>
     
-     </div>
-    </div>
-    </div>
+                <div class="col-lg-4 col-md-3 col-xs-6 thumb">
+                    <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title=""
+                       data-image="photo-1514195385834-0853a6eda41c.jpg"
+                       data-target="#image-gallery">
+                        <img class="img-thumbnail"
+                             src="photo-1514195385834-0853a6eda41c.jpg"
+                             alt="Another alt text">
+                    </a>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                    <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Test1"
+                       data-image="background-camera-copyspace-593322.jpg"
+                       data-target="#image-gallery">
+                        <img class="img-thumbnail"
+                             src="background-camera-copyspace-593322.jpg"
+                             alt="Another alt text" style=width:180%>
+                    </a>
+                </div>
+
+                <div class="col-lg-4 col-md-3 col-xs-6 thumb">
+                    <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Im so nice"
+                       data-image="photo-1507643179773-3e975d7ac515.jpg"
+                       data-target="#image-gallery">
+                        <img class="img-thumbnail"
+                             src="photo-1507643179773-3e975d7ac515.jpg"
+                             alt="Another alt text">
+                    </a>
+                </div>
     
-</div>
-</div>
-</section>
-</div>
+                <div class="col-lg-4 col-md-3 col-xs-6 thumb">
+                    <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Im so nice"
+                       data-image="photo-1434295644475-aacd5f5dce1b.jpg"
+                       data-target="#image-gallery">
+                        <img class="img-thumbnail"
+                             src="photo-1434295644475-aacd5f5dce1b.jpg"
+                             alt="Another alt text">
+                    </a>
+                </div>
+                                    
+            <div class="modal fade" id="image-gallery" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title" id="image-gallery-title"></h4>
+                            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <img id="image-gallery-image" class="img-responsive col-md-12" src="">
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary float-left" id="show-previous-image"><i class="fa fa-arrow-left"></i>
+                            </button>
+    
+                            <button type="button" id="show-next-image" class="btn btn-secondary float-right"><i class="fa fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+      </div>
+    </section>
+    </div>
+
 
 <div class="row">
 <section id="contact" class="container-fluid">
@@ -646,7 +769,7 @@ input[type=submit]:hover {
           <div class="row">
             
             <div class="column">
-              <form action="file:///C:/action_page.php">
+              <form action="action_page.php">
                 <label for="fname">First Name</label>
                 <input type="text" id="fname" name="firstname" placeholder="Your name..">
                 <label for="lname">Last Name</label>
@@ -672,7 +795,8 @@ input[type=submit]:hover {
         </div>
       </div>  
      
-    </section></div>
+    </section>
+  </div>
 
 
 
