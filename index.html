@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+     <link rel="stylesheet" href="css/bootstrap-responsive.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./Untitled-2_files/baguetteBox.min.css">
+    
+         <script src="js/jquery.js"></script>
+    <script src=js/bootstrap.js></script>
+    
+     <link rel="stylesheet" type="text/css" href="css/main.css">
+    <!-- Latest compiled and minified CSS -->
+
+<!--external css files-->
+<link rel="stylesheet" href="css/stylesheet.css">
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<!--For Social Media Buttons-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+ <style>
+h1{
+    color:blueviolet;
+    font-size: 90px;
+    text-align:center;
+    font-weight:bold;
+    font-family: 'Courier New', Courier, monospace;
+}
+@media only screen and (max-width: 600px){
+    h1{
+        font-size:45px;
+    }
+}
+h2{
+    color:orange;
+    font-size:65px;
+    text-align:center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+    font-weight:900;
+}
+@media only screen and (max-width:600px){
+    h2{
+        font-size:40px;
+    }
+}
+h3{
+    font-size:30px;
+    color:white;
+    text-align:center;
+    font-family: 'Libre Baskerville', serif;
+
+}
+@media only screen and (max-width:600px){
+    h3{
+        font-size:20px;
+    }
+}
+
+.greentext{
+    color:green;
+}
+.backcolor{
+    text-decoration: none;
+    background-color:black;
+    display:block;
+    box-shadow: 10px 10px 5px white;
+    }
+  
+
+.hero-image1 {
+  width:100%;
+  background-image: url("background_20.wide.jpeg");
+  background-color: lightblue;
+  height:800px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  border:1px solid black;
+  repeat center center fixed;
+}
+.hero-image2 {
+  width:100%;
+  background-image: url("architecture-art-background-1764702.jpg");
+  height:800px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  overflow:hidden;
+}
+.hero-image3 {
+  width:100%; 
+  background-image: url("brown-design-dried-172303.jpg");
+  height:850px;
+  background-position:center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.hero-image4 {
+  width:100%; 
+  background-image: url("attractive-backdrop-background-988872.jpg");
+  height:800px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.hero-image5 {
+  width:100%;
+  background-image: url("38175.jpg");
+  height:900px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+@media only screen and (max-width:600px){
+    .hero-image5{
+        height:2000px;
+    }
+}
+.hero-image6 {
+  width:100%; 
+  background-image: url("art-background-blue-268415.jpg");
+  height:1000px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.hero-image7{
+  width:100%; 
+  background-image: url("blurred-background-design-fence-683402.jpg");
+  height:550px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+}
+@media only screen and (max-width:600px){
+    .hero-image7{
+        height:1050px;
+    }
+}
+.hero-text7{
+  text-align:left;
+  position:absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  background-color: aqua;
+}
+.hero-text1 {
+  max width: 960px;
+  text-align:center;
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-shadow: 2px 2px 2px;
+  }
+
+.hero-text2 {
+  text-align:left;
+  position:absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  background-color: aqua;
+}
+.hero-text3{
+  text-align:left;
+  position:absolute;
+  top: 12%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  color: orange;
+  background-color: aqua;
+  font-family: 'Times New Roman', Times, serif;
+ }
+.hero-text4{
+  text-align:left;
+  position:absolute;
+  top: 8%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  background-color: aqua;
+}
+.hero-text5{
+  text-align:left;
+  position:absolute;
+  top: 5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  background-color: aqua;
+}
+@media only screen and (max-width:600px){
+    .hero-text5{
+       top:3%;
+    }
+}
+.hero-text6{
+  text-align:left;
+  position:absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  background-color: aqua;
+}
+.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float:left;
+  width: 180px;
+  top:20%;
+}
+
+.gallery:hover {
+  border: 1px solid #777;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+  
+}
+
+.e1{
+    
+    text-align: justify;
+     text-justify: inter-word;
+    top: 15%;
+    left:3%;
+    position:absolute;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:purple;
+    font-weight:800;
+    font-size:40px;
+    text-transform: capitalize;
+    font-variant: small-caps;
+    padding-right:40%;
+}
+@media only screen and (max-width:1050px){
+  .e1{
+    font-size:20px;
+    top:20%;
+    color:white;
+    font-weight: bolder;
+    left:23%;
+  }
+}
+.k{
+  right:75%;
+  }
+
+
+ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+li {
+  float: left;
+  border-right: 3px solid white;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+
+  background-color: #4CAF50;
+}
+* {
+  box-sizing: border-box;
+}
+
+/* Style inputs */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Style the container/contact section */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+@media screen and (max-width: 600px)
+{.img-res{
+    width:120px;
+    height:100px;
+    margin-left: auto;
+    margin-right: auto;
+}}
+.img-re{
+  width:px;
+}
+@media screen and (max-width:600px)
+{
+ 
+}
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin-left:auto;
+  margin-right:auto;
+  left:50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+  margin-left:auto;
+  margin-right:auto;
+  left:50%;
+}
+
+#image-gallery .modal-footer{
+  display: block;
+}
+
+.thumb{
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+#cent{
+  margin-left: auto;
+  margin-right: auto;
+  left:50%;
+  
+}
+</style>
+</head>
+
+<script>
+    $(function()
+    {
+        function after_form_submitted(data)
+        {
+            if(data.result == 'success')
+            {
+                $('form#reused_form').hide();
+                $('#success_message').show();
+                $('#error_message').hide();
+            }
+            else
+            {
+                $('#error_message').append('<ul></ul>');
+    
+                jQuery.each(data.errors,function(key,val)
+                {
+                    $('#error_message ul').append('<li>'+key+':'+val+'</li>');
+                });
+                $('#success_message').hide();
+                $('#error_message').show();
+    
+                //reverse the response on the button
+                $('button[type="button"]', $form).each(function()
+                {
+                    $btn = $(this);
+                    label = $btn.prop('orig_label');
+                    if(label)
+                    {
+                        $btn.prop('type','submit' );
+                        $btn.text(label);
+                        $btn.prop('orig_label','');
+                    }
+                });
+    
+            }//else
+        }
+    
+      $('#reused_form').submit(function(e)
+          {
+            e.preventDefault();
+    
+            $form = $(this);
+            //show some response on the button
+            $('button[type="submit"]', $form).each(function()
+            {
+                $btn = $(this);
+                $btn.prop('type','button' );
+                $btn.prop('orig_label',$btn.text());
+                $btn.text('Sending ...');
+            });
+    
+    
+                        $.ajax({
+                    type: "POST",
+                    url: 'handler.php',
+                    data: $form.serialize(),
+                    success: after_form_submitted,
+                    dataType: 'json'
+                });
+    
+          });
+    });
+    </script>
+<body>
+
+    <!-- navbar -->  
+ <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top" id='mainNav'>  
+    <a class="navbar-brand font-weight-bold" style="font-size:20px" href="#home1">HOME</a>
+   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-expanded="true">  
+    <span class="navbar-toggler-icon"></span>
+   </button>
+      <div class="collapse navbar-collapse " id="navbarSupportedContent">     
+     <ul class="navbar-nav nav-pills ml-auto">
+     <li class="nav-item">
+        <a class="nav-link font-weight-bold" style="font-size:25px; color:yellowgreen;" href="#about me">ABOUT ME</a>
+      </li>  
+    <li class='nav-item'>
+      <a class='nav-link font-weight-bold' style='font-size:25px; color:yellowgreen;' href='#resume'>RESUME</a>
+    </li>  
+   <li class="nav-item">
+       <a class="nav-link font-weight-bold" style="font-size:25px; color:yellowgreen" href="#my skills">MY SKILLS</a>    
+    </li>
+    <li class="nav-item"> 
+       <a class="nav-link font-weight-bold" style="font-size:25px; color:yellowgreen" href="#certifications">CERTIFICATIONS</a></li>   
+   <li class="nav-item">  
+      <a class="nav-link font-weight-bold" style="font-size:25px; color:yellowgreen" href="#photo gallery">GALLERY</a></li>  
+   <li class="nav-item"> 
+    <a class="nav-link font-weight-bold" style="font-size:25px; color:yellowgreen" href="#contact">CONTACT ME</a></li> 
+   </ul> 
+   </div>
+</nav>
+  <br>
+
+ <div class="row">
+<section id="home1" class="container-fluid">
+ 
+<div class="hero-image1">
+        <div class="hero-text1">
+          <h1 class="backcolor wow fadeInLeft themeText" data-wow-duration="1s" data-wow-delay="2s">PORTFOLIO</h1><br>
+          <h2 class="wow fadeInUp themeText" data-wow-duration="1s" data-wow-delay="2.5s">LIFE DOESN'T REQUIRE THAT WE BE THE BEST,ONLY THAT WE TRY OUR BEST.</h2><br>
+          <h3 class="wow fadeInRight themeText">Web Designer.Web Developer..</h3>
+        </div>
+      </div>
+</section>
+</div>
+
+
+<div class="row">
+<section id="about me" class="container-fluid">
+    <div class="hero-image2">
+       <div class="hero-text2">
+        <h1 style="font-size:40px; text-align: left;" class='revealOnScroll wow zoomInDown'>ABOUT ME</h1>
+        </div>
+       <p class="e1 revealOnScroll wow rollIn" data-wow-duration="1s" data-wow-delay="1.5s">
+        HELLO <br>
+        THIS IS RAHUL KUMAR PATRO..<br>
+        I WELCOME YOU ALL TO MY WEBSITE..<br>
+        I HAVE INTEREST IN THE FIELD OF PROGRAMMING AND DEVELOPMENT..<br>
+        ALSO HAVE A WIDE INTEREST IN WEB DEVEOPMENT AND DESIGNING.
+        </p> 
+        <div class="k">
+         <a target="blank" href="file:///C:/Users/hp/Desktop/Web%20Development/IMG_20190609_173240.jpg">
+          <img src="file:///C:/Users/hp/Desktop/Web%20Development/IMG_20190609_173240.jpg" style="float:right" alt="Scenery" class="img-responsive" width="500px" height="590px">
+           </a>
+        </div>
+
+
+        
+      
+        <br><br><br><br><br><br><br><br> <br><br><br><br><br><br><br><br> <br><br><br><br><br><br><br><br><br><br>
+       </div>
+
+</section>
+</div>
+
+<div class='row'>
+<section id='resume' class='container-fluid'>
+<div class='hero-image7'>
+  <div class='hero-text7'>
+      <h1 style="font-size:50px; color:orange;" class='revealOnScroll wow zoomInDown'>RESUME</h1>
+  </div>
+  <br><br><br><br><br><br><br>
+  <div class='container'>
+      <div class="card-deck">
+          <div class="card bg-primary">
+            <div class="card-body text-center">
+              <p class="card-text revealOnScroll wow tada" data-wow-duration="1s" data-wow-delay="1.5s" style="font-size:30px; font-weight: bolder">I am pursuing Integrated MSc. in Mathematics And Computing In BIRLA INSTITUTE OF TECHNOLOGY,MESRA,RANCHI</p>
+              <p class="card-text revealOnScroll wow tada" data-wow-duration="1.5s" data-wow-delay="1.5s"" style="font-size: 30px; font-weight:bolder">Currently I am in 2nd Year..</p>
+              <p class="card-text revealOnScroll wow tada" data-wow-duration="2s" data-wow-delay="1.5s"" style="font-size:30px; font-weight: bolder"> I am a Machine Learning enthusiast,have wide interest in the field of Web Development....</p>
+               </div>
+  </div>
+      
+</div>
+
+</section> 
+
+
+
+</div>
+<div class="row">
+<section id="my skills" class="container-fluid">
+<div class="hero-image3">
+     <div class="hero-text3">
+     <h1 style="font-size:50px; color:orange;" class='revealOnScroll wow zoomInDown'>MY SKILLS</h1>
+     </div>
+     <br><br><br><br><br><br><br><br>
+     <div class="container-fluid">
+         <div class="progress">
+          <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+           (C++) 70%
+          </div>
+          </div>
+          <br><br>
+           <div class="progress">
+            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+            (HTML) 70%
+            </div>
+          </div>
+          <br><br>
+          <div class="progress">
+            <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" style="width:80%">
+             (CSS) 80%
+             </div>
+            </div>
+          <br><br>
+           <div class="progress">
+            <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valemain="0" aria-valuemax="100" style="width:60%">
+            (BOOTSTRAP) 60%
+            </div>
+          </div>
+          <br><br>
+          <div class="progress">
+              <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valemain="0" aria-valuemax="100" style="width:50%">
+              (JAVASCRIPT) 50%
+              </div>
+            </div>
+            <br><br>
+          <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuwmax="100" style="width:50%">
+               (PYHTON) 50%
+               </div>
+               </div>
+               <br><br>
+          <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="width:30%">
+                (GIT) 30%
+                </div>
+              </div>
+              <br><br>
+            <div class="progress">
+                <div class="progress-bar" role="progressbar;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:50%">
+                (DATA VISUALISATION) 50%
+                </div>
+              </div>
+              <br><br>
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:60%">
+                (PANDAS) 60%
+                </div>
+              </div>
+               <br><br>
+            <div class='progress'>
+                <div class='progress-bar' role='progressbar' aria-valuenow='50' ariavaluemin='0' aria-valuemax='100' style='width:50%'>
+                (LINUX) 50%
+                </div>
+               </div>
+      </div>
+
+</div>
+</section>
+</div>
+
+<div class="row">
+<section id="certifications" class="container-fluid">
+  <div class="hero-image4">
+      <div class="hero-text4">
+       <h1 style="font-size:40px; color:orangered;" class='revealOnScroll wow zoomInDown'>CERTIFICATES</h1> 
+      </div>
+      <div class="container-fluid">
+      <div class="container gallery-container-fluid">
+        <div class="tz-gallery">
+          <br><br><br><br><br>
+          <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-6">
+                <div class="card">
+                    <div class='img-res'>
+                    <a class="lightbox" href="Python For Data Science Coursera.PNG">
+                    <img src="Python For Data Science Coursera.PNG" alt="Park" class="card-img-top revealOnScroll wow flash" data-wow-delay="0.5s">
+                    </a>
+                    </div>
+                </div>
+            </div>
+             
+            <div class="col-lg-4 col-md-4 col-sm-6">
+                <div class="card">
+                    <div class="img-res">
+                    <a class="lightbox" href="Linux Workshop.PNG">
+                    <img src="Linux Workshop.PNG" alt="Park" class="card-img-top revealOnScroll wow flash" data-wow-delay="1s">
+                    </a>
+                    </div>
+                </div>
+            </div>
+             
+            <div class="col-lg-4">
+                <div class="card">
+                    <div class="img-res">
+                    <a class="lightbox" href="Data Visualisation With Python.PNG">
+                    <img src="Data Visualisation With Python.PNG" alt="Park" class="card-img-top revealOnScroll wow flash" data-wow-delay="1.5s">
+                    </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br>
+          <div class="row"> 
+            <div class="col-lg-4">
+                <div class="card">
+                    <div class='img-res'>
+                    <a class="lightbox" href="Data Analysis Udemy.PNG">
+                    <img src="Data Analysis Udemy.PNG" alt="Park" class="card-img-top revealOnScroll wow flash" data-wow-delay="2s">
+                    </a>
+                    </div>
+                </div>
+            </div>
+             
+            <div class="col-lg-4">
+                <div class="card">
+                    <div class="img-res">
+                    <a class="lightbox" href="Python for Data Science Cognitive classes.PNG">
+                    <img src="Python for Data Science Cognitive classes.PNG" alt="Park" class="card-img-top revealOnScroll wow flash" data-wow-delay="2.5s">
+                    </a>
+                    </div>
+                </div>
+            </div>
+             
+            <div class="col-lg-4">
+                <div class="card">
+                    <div class="img-res">
+                    <a class="lightbox" href="Certificate C++ Sololearn Image.jpg">
+                    <img src="Certificate C++ Sololearn Image.jpg" alt="Park" class="card-img-top revealOnScroll wow flash" data-wow-delay="3s">
+                    </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+
+      </div>
+</div>
+</div>
+</section>
+
+<section id="photo gallery" class="container-fluid">
+<div class="hero-image5">
+   <div class="hero-text5">
+  <h1 style="font-size:40px; color:brown" class='revealOnScroll wow zoomInDown'>GALLERY</h1>
+  </div>
+  <br>
+  <br><br><br><br><br>
+  <div class="container">
+      <div class="row">
+        <div class="row">
+                <div class="col-lg-4 col-md-3 col-xs-6 thumb">
+                    <a class="thumbnail" href="photo-1551350125-b3846dc59c0d.jpg" data-image-id="" data-toggle="modal" data-title=""
+                       data-image="photo-1551350125-b3846dc59c0d.jpg"
+                       data-target="#image-gallery">
+                        <img class="img-thumbnail"
+                             src="photo-1551350125-b3846dc59c0d.jpg"
+                             alt="Another alt text">
+                    </a>
+                </div>
+
+                <div class="col-lg-4 col-md-3 col-xs-6 thumb">
+                    <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title=""
+                       data-image="photo-1485518994577-6cd6324ade8f.jpg"
+                       data-target="#image-gallery">
+                        <img class="img-thumbnail"
+                             src="photo-1485518994577-6cd6324ade8f.jpg"
+                             alt="Another alt text" >
+                    </a>
+                </div>
+    
+                <div class="col-lg-4 col-md-3 col-xs-6 thumb">
+                    <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title=""
+                       data-image="photo-1514195385834-0853a6eda41c.jpg"
+                       data-target="#image-gallery">
+                        <img class="img-thumbnail"
+                             src="photo-1514195385834-0853a6eda41c.jpg"
+                             alt="Another alt text">
+                    </a>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                    <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Test1"
+                       data-image="background-camera-copyspace-593322.jpg"
+                       data-target="#image-gallery">
+                        <img class="img-thumbnail"
+                             src="background-camera-copyspace-593322.jpg"
+                             alt="Another alt text" style=width:180%>
+                    </a>
+                </div>
+
+                <div class="col-lg-4 col-md-3 col-xs-6 thumb">
+                    <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Im so nice"
+                       data-image="photo-1507643179773-3e975d7ac515.jpg"
+                       data-target="#image-gallery">
+                        <img class="img-thumbnail"
+                             src="photo-1507643179773-3e975d7ac515.jpg"
+                             alt="Another alt text">
+                    </a>
+                </div>
+    
+                <div class="col-lg-4 col-md-3 col-xs-6 thumb">
+                    <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Im so nice"
+                       data-image="photo-1434295644475-aacd5f5dce1b.jpg"
+                       data-target="#image-gallery">
+                        <img class="img-thumbnail"
+                             src="photo-1434295644475-aacd5f5dce1b.jpg"
+                             alt="Another alt text">
+                    </a>
+                </div>
+                                    
+            <div class="modal fade" id="image-gallery" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title" id="image-gallery-title"></h4>
+                            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <img id="image-gallery-image" class="img-responsive col-md-12" src="">
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary float-left" id="show-previous-image"><i class="fa fa-arrow-left"></i>
+                            </button>
+    
+                            <button type="button" id="show-next-image" class="btn btn-secondary float-right"><i class="fa fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+      </div>
+    </section>
+    </div>
+
+
+<div class="row">
+<section id="contact" class="container-fluid">
+
+ <div class="hero-image6">
+         <div class="container">
+           <br><br>
+          <div style="text-align:center">
+             <h1 class='revealOnScroll wow rubberBand'>CONTACT ME</h1>
+            <p style="font-size:35px; color:orangered;" class='revealOnScroll wow zoomInDown'>ANY QUERIES, SUGGESTIONS, PLEASE LET ME KNOW...<br>
+              Swing by for a cup of coffee, or leave me a message:
+            </p>
+          </div>
+          <div class="row">
+            
+            <div class="column">
+              <form action="action.php">
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="Last Name" placeholder="Your Last Name...">
+                <label for="country">Country</label>
+                <select id="country" name="country">
+                  <option value="india">INDIA</option>
+                  <option value="canada">CANADA</option>
+                  <option value="usa">USA</option>
+                  <option value="australia">AUSTRALIA
+                  </option>
+                  <option value="europe">SAUDI ARABIA</option>  
+                  </select>
+                <label for="subject">Subject</label>
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+                <input type="submit" value="Submit">
+              </form>
+            </div>
+            <div class="column">
+                <img src="Capture.png" style="width:100%">
+              </div>
+          </div>
+        </div>
+      </div>  
+     
+    </section>
+  </div>
+
+
+
+<link href="./Untitled-2_files/css" rel="stylesheet">
+
+<script src="js/wow.min.js"></script>
+              <script>
+              new WOW().init();
+              </script>
+
+</body>
+</html>
