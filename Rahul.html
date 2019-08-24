@@ -149,12 +149,17 @@ h3{
 .hero-image7{
   width:100%; 
   background-image: url("blurred-background-design-fence-683402.jpg");
-  height:800px;
+  height:550px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
 
+}
+@media only screen and (max-width:600px){
+    .hero-image7{
+        height:1050px;
+    }
 }
 .hero-text7{
   text-align:left;
@@ -404,19 +409,90 @@ input[type=submit]:hover {
   margin-top: 15px;
   margin-bottom: 15px;
 }
+#cent{
+  margin-left: auto;
+  margin-right: auto;
+  left:50%;
+  
+}
 </style>
 </head>
+
+<script>
+    $(function()
+    {
+        function after_form_submitted(data)
+        {
+            if(data.result == 'success')
+            {
+                $('form#reused_form').hide();
+                $('#success_message').show();
+                $('#error_message').hide();
+            }
+            else
+            {
+                $('#error_message').append('<ul></ul>');
+    
+                jQuery.each(data.errors,function(key,val)
+                {
+                    $('#error_message ul').append('<li>'+key+':'+val+'</li>');
+                });
+                $('#success_message').hide();
+                $('#error_message').show();
+    
+                //reverse the response on the button
+                $('button[type="button"]', $form).each(function()
+                {
+                    $btn = $(this);
+                    label = $btn.prop('orig_label');
+                    if(label)
+                    {
+                        $btn.prop('type','submit' );
+                        $btn.text(label);
+                        $btn.prop('orig_label','');
+                    }
+                });
+    
+            }//else
+        }
+    
+      $('#reused_form').submit(function(e)
+          {
+            e.preventDefault();
+    
+            $form = $(this);
+            //show some response on the button
+            $('button[type="submit"]', $form).each(function()
+            {
+                $btn = $(this);
+                $btn.prop('type','button' );
+                $btn.prop('orig_label',$btn.text());
+                $btn.text('Sending ...');
+            });
+    
+    
+                        $.ajax({
+                    type: "POST",
+                    url: 'handler.php',
+                    data: $form.serialize(),
+                    success: after_form_submitted,
+                    dataType: 'json'
+                });
+    
+          });
+    });
+    </script>
 <body>
 
     <!-- navbar -->  
  <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top" id='mainNav'>  
     <a class="navbar-brand font-weight-bold" style="font-size:20px" href="#home1">HOME</a>
-   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">  
+   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-expanded="true">  
     <span class="navbar-toggler-icon"></span>
    </button>
-   <div class="collapse navbar-collapse " id="navbarSupportedContent">     
-     <ul class="navbar-nav ml-center">
-    <li class="nav-item">
+      <div class="collapse navbar-collapse " id="navbarSupportedContent">     
+     <ul class="navbar-nav nav-pills ml-auto">
+     <li class="nav-item">
         <a class="nav-link font-weight-bold" style="font-size:25px; color:yellowgreen;" href="#about me">ABOUT ME</a>
       </li>  
     <li class='nav-item'>
@@ -468,12 +544,12 @@ input[type=submit]:hover {
           <img src="file:///C:/Users/hp/Desktop/Web%20Development/IMG_20190609_173240.jpg" style="float:right" alt="Scenery" class="img-responsive" width="500px" height="590px">
            </a>
         </div>
-        <br><br><br><br><br><br><br><br> <br><br><br><br><br><br><br><br> <br><br><br><br><br><br><br><br><br><br>
-        <div class='container-fluid' style="width:350px;" align="center">
-        <a href="www.linkedin.com" class="fa fa-linkedin"></a>
-        </div>
+
+
         
-</div>
+      
+        <br><br><br><br><br><br><br><br> <br><br><br><br><br><br><br><br> <br><br><br><br><br><br><br><br><br><br>
+       </div>
 
 </section>
 </div>
@@ -489,16 +565,13 @@ input[type=submit]:hover {
       <div class="card-deck">
           <div class="card bg-primary">
             <div class="card-body text-center">
-              <p class="card-text" style="font-size:30px; font-weight: bolder">I am pursuing Integrated MSc. Maths And Computing In BIRLA INSTITUTE OF TECHNOLOGY,MESRA,RANCHI</p>
-              <p class="card-text" style="font-size: 20px">Currently I am in 2nd Year..</p>
-              <p class="card-text">Some more text to increase the height</p>
-              <p class="card-text">Some more text to increase the height</p>
-            </div>
-          </div>
+              <p class="card-text revealOnScroll wow tada" data-wow-duration="1s" data-wow-delay="1.5s" style="font-size:30px; font-weight: bolder">I am pursuing Integrated MSc. in Mathematics And Computing In BIRLA INSTITUTE OF TECHNOLOGY,MESRA,RANCHI</p>
+              <p class="card-text revealOnScroll wow tada" data-wow-duration="1.5s" data-wow-delay="1.5s"" style="font-size: 30px; font-weight:bolder">Currently I am in 2nd Year..</p>
+              <p class="card-text revealOnScroll wow tada" data-wow-duration="2s" data-wow-delay="1.5s"" style="font-size:30px; font-weight: bolder"> I am a Machine Learning enthusiast,have wide interest in the field of Web Development....</p>
+               </div>
   </div>
+      
 </div>
-
-
 
 </section> 
 
@@ -669,7 +742,7 @@ input[type=submit]:hover {
       <div class="row">
         <div class="row">
                 <div class="col-lg-4 col-md-3 col-xs-6 thumb">
-                    <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title=""
+                    <a class="thumbnail" href="photo-1551350125-b3846dc59c0d.jpg" data-image-id="" data-toggle="modal" data-title=""
                        data-image="photo-1551350125-b3846dc59c0d.jpg"
                        data-target="#image-gallery">
                         <img class="img-thumbnail"
@@ -769,20 +842,20 @@ input[type=submit]:hover {
           <div class="row">
             
             <div class="column">
-              <form action="action_page.php">
+              <form action="action.php">
                 <label for="fname">First Name</label>
                 <input type="text" id="fname" name="firstname" placeholder="Your name..">
                 <label for="lname">Last Name</label>
-                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                <input type="text" id="lname" name="Last Name" placeholder="Your Last Name...">
                 <label for="country">Country</label>
                 <select id="country" name="country">
                   <option value="india">INDIA</option>
                   <option value="canada">CANADA</option>
                   <option value="usa">USA</option>
                   <option value="australia">AUSTRALIA
-                  </option><option value="europe">EUROPE</option>  
-                  <option value="antarctica">ANTARCTICA</option>
-                </select>
+                  </option>
+                  <option value="europe">SAUDI ARABIA</option>  
+                  </select>
                 <label for="subject">Subject</label>
                 <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
                 <input type="submit" value="Submit">
