@@ -24,14 +24,20 @@
 <!-- jQuery library -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
-<!-- Popper JS -->
+<!-- Proper JS -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 
 <!-- Latest compiled JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 <!--For Social Media Buttons-->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--Preloader-->
+<link href="preloader.css" rel="stylesheet">
 
+<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.3/jquery.min.js'></script>
+<link rel="stylesheet" href="css/queryLoader.css" type="text/css" />
+<script type='text/javascript' src='js/queryLoader.js'></script>
+</head>
  <style>
 h1{
     color:blueviolet;
@@ -171,7 +177,7 @@ h3{
   background-color: aqua;
 }
 .hero-text1 {
-  max width: 960px;
+  max-width: 960px;
   text-align:center;
   position:absolute;
   top: 50%;
@@ -405,16 +411,7 @@ input[type=submit]:hover {
   display: block;
 }
 
-.thumb{
-  margin-top: 15px;
-  margin-bottom: 15px;
-}
-#cent{
-  margin-left: auto;
-  margin-right: auto;
-  left:50%;
-  
-}
+
 </style>
 <title>PORTFOLIO</title>
 </head>
@@ -482,9 +479,14 @@ input[type=submit]:hover {
     
           });
     });
-    </script>
+
+    
+
+     </script>
 <body>
-  
+
+   
+
     <!-- navbar -->  
  <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top" id='mainNav'>  
     <div class="container-fluid">
@@ -885,6 +887,12 @@ input[type=submit]:hover {
               <script>
               new WOW().init();
               </script>
+
+
+
+<script type='text/javascript'>
+	QueryLoader.init();
+</script>
 
 </body>
 </html>
