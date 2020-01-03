@@ -1,915 +1,177 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="css/bootstrap.css">
-     <link rel="stylesheet" href="css/bootstrap-responsive.css">
-    
-    <link rel="stylesheet" href="./Untitled-2_files/baguetteBox.min.css">
-    
-         <script src="js/jquery.js"></script>
-    <script src=js/bootstrap.js></script>
-    
-     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <!-- Latest compiled and minified CSS -->
+<!DOCTYPE HTML>
+<html lang="en-US">
+    <head>
+        <title>PoRtFoLiO</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+        <meta name="keywords" content="HTML, CSS, JavaScript, PHP" />
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-<!--external css files-->
-<link rel="stylesheet" href="css/stylesheet.css">
+        <link rel="shortcut icon" href="images/favi.jpg" />
+        <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700%7CPT+Serif:400,700' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" type="text/css"  href='css/clear.css' />
+        <link rel="stylesheet" type="text/css"  href='css/common.css' />
+        <link rel="stylesheet" type="text/css"  href='css/font-awesome.min.css' />
+        <link rel="stylesheet" type="text/css"  href='css/carouFredSel.css' />
+        <link rel="stylesheet" type="text/css"  href='css/sm-clean.css' />
+        <link rel="stylesheet" type="text/css"  href='style.css' />
 
-<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <!--[if lt IE 9]>
+                <script src="js/html5.js"></script>
+        <![endif]-->
+
+    </head>
 
 
+    <body class="home blog">
+        <div class="doc-loader"></div>
+        <div class="content-1170 header-holder center-relative">
+            <div class="header-logo left">
+                
+            </div>
 
-<!--Preloader-->
+            <div class="header-menu">
+                <div class="toggle-holder relative">
+                    <div id="toggle">
+                        <div class="one"></div>
+                        <div class="two"></div>
+                        <div class="three"></div>
+                    </div>
+                </div>
 
-<style>
-h1{
-    color:blueviolet;
-    font-size: 90px;
-    text-align:center;
-    font-weight:bold;
-    font-family: 'Courier New', Courier, monospace;
-}
-@media only screen and (max-width: 600px){
-    h1{
-        font-size:45px;
-    }
-}
-h2{
-    color:orange;
-    font-size:65px;
-    text-align:center;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-style: italic;
-    font-weight:900;
-}
-@media only screen and (max-width:600px){
-    h2{
-        font-size:40px;
-    }
-}
-h3{
-    font-size:30px;
-    color:white;
-    text-align:center;
-    font-family: 'Libre Baskerville', serif;
-}
-@media only screen and (max-width:600px){
-    h3{
-        font-size:20px;
-    }
-}
-.greentext{
-    color:green;
-}
-.backcolor{
-    text-decoration: none;
-    background-color:black;
-    display:block;
-    box-shadow: 10px 10px 5px white;
-    }
-  
-.hero-image1 {
-  width:100%;
-  background-image: url("images/background_20.wide.jpeg");
-  background-color: lightblue;
-  height:800px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  border:1px solid black;
-  repeat center center fixed;
-}
-.hero-image2 {
-  width:100%;
-  background-image: url("images/architecture-art-background-1764702.jpg");
-  height:800px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  overflow:hidden;
-}
-.hero-image3 {
-  width:100%; 
-  background-image: url("images/brown-design-dried-172303.jpg");
-  height:850px;
-  background-position:center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-}
-.hero-image4 {
-  width:100%; 
-  background-image: url("images/attractive-backdrop-background-988872.jpg");
-  height:800px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-}
-.hero-image5 {
-  width:100%;
-  background-image: url("images/38175.jpg");
-  height:900px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-}
-@media only screen and (max-width:600px){
-    .hero-image5{
-        height:2000px;
-    }
-}
-.hero-image6 {
-  width:100%; 
-  background-image: url("images/art-background-blue-268415.jpg");
-  height:1000px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-}
-.hero-image7{
-  width:100%; 
-  background-image: url("images/blurred-background-design-fence-683402.jpg");
-  height:550px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-}
-@media only screen and (max-width:600px){
-    .hero-image7{
-        height:1050px;
-    }
-}
-.hero-text7{
-  text-align:left;
-  position:absolute;
-  top: 10%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  background-color: aqua;
-}
-.hero-text1 {
-  max-width: 960px;
-  text-align:center;
-  position:absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  text-shadow: 2px 2px 2px;
-  }
-.hero-text2 {
-  text-align:left;
-  position:absolute;
-  top: 10%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  background-color: aqua;
-}
-.hero-text3{
-  text-align:left;
-  position:absolute;
-  top: 12%;
-  left:50%;
-  transform: translate(-50%, -50%);
-  color: orange;
-  background-color: aqua;
-  font-family: 'Times New Roman', Times, serif;
- }
-.hero-text4{
-  text-align:left;
-  position:absolute;
-  top: 8%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  background-color: aqua;
-}
-.hero-text5{
-  text-align:left;
-  position:absolute;
-  top: 5%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  background-color: aqua;
-}
-@media only screen and (max-width:600px){
-    .hero-text5{
-       top:3%;
-    }
-}
-.hero-text6{
-  text-align:left;
-  position:absolute;
-  top: 15%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  background-color: aqua;
-}
-.gallery {
-  margin: 5px;
-  border: 1px solid #ccc;
-  float:left;
-  width: 180px;
-  top:20%;
-}
-.gallery:hover {
-  border: 1px solid #777;
-}
-.gallery img {
-  width: 100%;
-  height: auto;
-  
-}
-.e1{
-    
-    text-align: justify;
-     text-justify: inter-word;
-    top: 15%;
-    left:3%;
-    position:absolute;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color:purple;
-    font-weight:800;
-    font-size:40px;
-    text-transform: capitalize;
-    font-variant: small-caps;
-    padding-right:40%;
-}
-@media only screen and (max-width:1050px){
-  .e1{
-    font-size:20px;
-    top:20%;
-    color:white;
-    font-weight: bolder;
-    left:23%;
-  }
-}
-.k{
-  right:75%;
-  }
-ul{
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-li {
-  float: left;
-  border-right: 3px solid white;
-}
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-li a:hover:not(.active) {
-  background-color: #111;
-}
-.active {
-  background-color: #4CAF50;
-}
-* {
-  box-sizing: border-box;
-}
-/* Style inputs */
-input[type=text], select, textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  margin-top: 6px;
-  margin-bottom: 16px;
-  resize: vertical;
-}
-input[type=submit] {
-  background-color: #4CAF50;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  cursor: pointer;
-}
-input[type=submit]:hover {
-  background-color: #45a049;
-}
-/* Style the container/contact section */
-.container {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 10px;
-}
-/* Create two columns that float next to eachother */
-.column {
-  float: left;
-  width: 50%;
-  margin-top: 6px;
-  padding: 20px;
-}
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column, input[type=submit] {
-    width: 100%;
-    margin-top: 0;
-  }
-}
-@media screen and (max-width: 600px)
-{.img-res{
-    width:120px;
-    height:100px;
-    margin-left: auto;
-    margin-right: auto;
-}}
-.img-re{
-  width:px;
-}
-@media screen and (max-width:600px)
-{
- 
-}
-.fa {
-  padding: 20px;
-  font-size: 30px;
-  width: 50px;
-  text-align: center;
-  text-decoration: none;
-  margin-left:auto;
-  margin-right:auto;
-  left:50%;
-}
-.fa:hover {
-    opacity: 0.7;
-}
-.fa-linkedin {
-  background: #007bb5;
-  color: white;
-  margin-left:auto;
-  margin-right:auto;
-  left:50%;
-}
-#image-gallery .modal-footer{
-  display: block;
-}
-
-.se-pre-con {
-    position: fixed;
-    left: 0px;
-    top: 0px;
-    width: 100%;
-    height: 100%;
-    z-index: 9999;
-    object-fit: fill;
-    background: url(/images/giphy.gif) center no-repeat ;
-}
-#preloader {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color:black;
-    /* change if the mask should have another color then white */
-    z-index: 9999;
-    /* makes sure it stays on top */
-  }
-  #status {
-   height: 100%;
-   width: 100%;
-    position: absolute;
-    object-fit: cover;
-    /* centers the loading animation horizontally one the screen */
-   
-    /* centers the loading animation vertically one the screen */
-    background-image: url(images/giphy.gif);
-    /* path to your loading animation */
-    background-repeat: no-repeat;
-    background-position: center;
-    margin: 0px 0px 0px 0px;
-    /* is width and height divided by two */
-  }
-</style>
-<title>PORTFOLIO</title>
-</head>
-
-<script>
-    $(function()
-    {
-        function after_form_submitted(data)
-        {
-            if(data.result == 'success')
-            {
-                $('form#reused_form').hide();
-                $('#success_message').show();
-                $('#error_message').hide();
-            }
-            else
-            {
-                $('#error_message').append('<ul></ul>');
-    
-                jQuery.each(data.errors,function(key,val)
-                {
-                    $('#error_message ul').append('<li>'+key+':'+val+'</li>');
-                });
-                $('#success_message').hide();
-                $('#error_message').show();
-    
-                //reverse the response on the button
-                $('button[type="button"]', $form).each(function()
-                {
-                    $btn = $(this);
-                    label = $btn.prop('orig_label');
-                    if(label)
-                    {
-                        $btn.prop('type','submit' );
-                        $btn.text(label);
-                        $btn.prop('orig_label','');
-                    }
-                });
-    
-            }//else
-        }
-    
-      $('#reused_form').submit(function(e)
-          {
-            e.preventDefault();
-    
-            $form = $(this);
-            //show some response on the button
-            $('button[type="submit"]', $form).each(function()
-            {
-                $btn = $(this);
-                $btn.prop('type','button' );
-                $btn.prop('orig_label',$btn.text());
-                $btn.text('Sending ...');
-            });
-    
-    
-                        $.ajax({
-                    type: "POST",
-                    url: 'handler.php',
-                    data: $form.serialize(),
-                    success: after_form_submitted,
-                    dataType: 'json'
-                });
-    
-          });
-    });
-    
-   
-     </script>
-<body> 
-
-    <div id="preloader">
-        <div id="status">&nbsp;</div>
-      </div>
-
-      <!-- navbar -->  
- <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top" id='mainNav'>  
-    <div class="container-fluid">
-       
-    <a class="navbar-brand font-weight-bold" style="font-size:20px" href="#home1">HOME</a>
-    
-   <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-expanded="false">  
-    <span class="navbar-toggler-icon"></span>
-   </button> -->
-      <div class="collapse navbar-collapse " id="navbarSupportedContent">     
-     <ul class="navbar-nav nav-pills ml-auto">
-     <li class="nav-item">
-        <a class="nav-link font-weight-bold" style="font-size:25px; color:yellowgreen;" href="#about me">ABOUT ME</a>
-      </li>  
-    <li class='nav-item'>
-      <a class='nav-link font-weight-bold' style='font-size:25px; color:yellowgreen;' href='#resume'>RESUME</a>
-    </li>  
-   <li class="nav-item">
-       <a class="nav-link font-weight-bold" style="font-size:25px; color:yellowgreen" href="#my skills">MY SKILLS</a>    
-    </li>
-    <li class="nav-item"> 
-       <a class="nav-link font-weight-bold" style="font-size:25px; color:yellowgreen" href="#certifications">CERTIFICATIONS</a></li>   
-   <li class="nav-item">  
-      <a class="nav-link font-weight-bold" style="font-size:25px; color:yellowgreen" href="#photo gallery">GALLERY</a></li>  
-   <li class="nav-item"> 
-    <a class="nav-link font-weight-bold" style="font-size:25px; color:yellowgreen" href="#contact">CONTACT ME</a></li> 
-   </ul> 
-   </div>
-  
-   </div>
-</nav>
-  <br>
-
- <div class="row">
-<section id="home1" class="container-fluid">
- 
-<div class="hero-image1">
-        <div class="hero-text1">
-          <h1 class="backcolor wow fadeInLeft themeText" data-wow-duration="1s" data-wow-delay="2s">PORTFOLIO</h1><br>
-          <h2 class="wow fadeInUp themeText" data-wow-duration="1s" data-wow-delay="2.5s">LIFE DOESN'T REQUIRE THAT WE BE THE BEST,ONLY THAT WE TRY OUR BEST.</h2><br>
-          <h3 class="wow fadeInRight themeText">Web Designer.Web Developer..</h3>
+                <nav id="header-main-menu" class="big-menu">
+                    <ul class="main-menu sm sm-clean">
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT ME</a></li>
+                        <li><a href="images/RAHUL's Resume.pdf" target="blank">RESUME</a></li>
+                        <li><a href="certificates.html">CERTIFICATES</a></li>
+                        
+                            
+                        </li>
+                    </ul>
+                </nav>
+                <div class="clear"></div>
+            </div>
+            <div class="clear"></div>
         </div>
-      </div>
-</section>
-</div>
+
+        <div class="block content-1170 center-relative">
+            <div class="blog-holder block center-relative">
+
+                <article id="post-1" class="relative blog-item-holder">
+                    <div class="post-thumb thumb-html one_thumb relative">
+                        <script>
+                            var slider1_speed = "300";
+                            var slider1_auto = "true";
+                            var slider1_pagination = "true";
+                            var slider1_hover = "true";
+                        </script>
+                        <div class="image-slider-wrapper">
+                            <div class="caroufredsel_wrapper">
+                                <ul id="slider1" class="image-slider slides center-text">
+                                    <li><img src="images/back2.gif" alt="back1" height="200"></li>
+                                   
+                                </ul>
+                            </div>
+                            <div class="slider1_pagination carousel_pagination left"></div>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                    <div class="post-title-holder one_title absolute">
+                        <h2 class="entry-title excerpt">
+                            <a href="single.html" style="color: black;font-weight: bolder;font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif">
+                               PORTFOLIO WEBSITE<br><br><br>
+                                ~RAHUL</a>
+                        </h2>
+                        <div class="cat-links">
+                            <ul>
+                               
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </article>
 
 
-<div class="row">
-<section id="about me" class="container-fluid">
-    <div class="hero-image2">
-       <div class="hero-text2">
-        <h1 style="font-size:40px; text-align: left;" class='revealOnScroll wow zoomInDown'>ABOUT ME</h1>
-        </div>
-       <p class="e1 revealOnScroll wow rollIn" data-wow-duration="1s" data-wow-delay="1.5s">
-        HELLO <br>
-        THIS IS RAHUL KUMAR PATRO..<br>
-        I WELCOME YOU ALL TO MY WEBSITE..<br>
-        I HAVE INTEREST IN THE FIELD OF PROGRAMMING AND DEVELOPMENT..<br>
-        ALSO HAVE A WIDE INTEREST IN WEB DEVEOPMENT AND DESIGNING.
-        </p> 
-        <div class="k">
-         <a target="blank" href="images/IMG_20190609_173240.jpg">
-          <img src="images/IMG_20190609_173240.jpg" style="float:right" alt="Scenery" class="img-responsive" width="500px" height="590px">
-           </a>
-        </div>
+                <article id="post-2" class="relative blog-item-holder">
+                    <div class="only-post-title-holder">
+                        <h2 class="entry-title excerpt" style="font-family: 'Courier New', Courier, monospace; font-weight: bolder;color: aliceblue; text-align: center; font-size:2em;line-height: 2cm;">
+                            
+                                LIFE DOESN'T REQUIRE THAT WE BE THE BEST,<br>
+                                ONLY THAT WE TRY OUR BEST.
+                           
+                        </h2>
+                        
+                    </div>
+                    <div class="clear"></div>
+                   
+                </article>
+
+
+                <article id="post-3" class="relative blog-item-holder">
+                    <div class="post-thumb thumb-image two_third_thumb left">
+                        <img src="images/back3.gif" alt="">
+                    </div>
+                    <div class="post-title-holder one_third_title right">
+                        <h2 class="entry-title" style="line-height: 1cm; text-align: center;">
+                            Check Out My Website For More Details
+                        </h2>
+                        
+                    </div>
+                    <div class="clear"></div>
+                    <div class="zigzag absolute" style="bottom: 40px; right: 331px;">
+                        
+                    </div>
+                </article>
+
+
+
+
+               
+
+            </div>
             
-      
-        <br><br><br><br><br><br><br><br> <br><br><br><br><br><br><br><br> <br><br><br><br><br><br><br><br><br><br>
-       </div>
-
-</section>
-</div>
-
-<div class='row'>
-<section id='resume' class='container-fluid'>
-<div class='hero-image7'>
-  <div class='hero-text7'>
-      <h1 style="font-size:50px; color:orange;" class='revealOnScroll wow zoomInDown'>RESUME</h1>
-  </div>
-  <br><br><br><br><br><br><br>
-  <div class='container'>
-      <div class="card-deck">
-          <div class="card bg-primary">
-            <div class="card-body text-center">
-              <p class="card-text revealOnScroll wow tada" data-wow-duration="1s" data-wow-delay="1.5s" style="font-size:30px; font-weight: bolder">I am pursuing Integrated MSc. in Mathematics And Computing In BIRLA INSTITUTE OF TECHNOLOGY,MESRA,RANCHI</p>
-              <p class="card-text revealOnScroll wow tada" data-wow-duration="1.5s" data-wow-delay="1.5s"" style="font-size: 30px; font-weight:bolder">Currently I am in 2nd Year..</p>
-              <p class="card-text revealOnScroll wow tada" data-wow-duration="2s" data-wow-delay="1.5s"" style="font-size:30px; font-weight: bolder"> I am a Machine Learning enthusiast,have wide interest in the field of Web Development....</p>
-              <div class='hero-text5'>
-              <a href ="RAHUL's Resume.pdf">Click here</a>
-              </div>
-               </div>
-  </div>
-      
-</div>
-
-</section> 
-
-
-
-</div>
-<div class="row">
-<section id="my skills" class="container-fluid">
-<div class="hero-image3">
-     <div class="hero-text3">
-     <h1 style="font-size:50px; color:orange;" class='revealOnScroll wow zoomInDown'>MY SKILLS</h1>
-     </div>
-     <br><br><br><br><br><br><br><br>
-     <div class="container-fluid">
-         <div class="progress">
-          <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:50%">
-           (C++) 50%
-          </div>
-          </div>
-          <br><br>
-           <div class="progress">
-            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
-            (HTML) 70%
-            </div>
-          </div>
-          <br><br>
-          <div class="progress">
-            <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" style="width:80%">
-             (CSS) 80%
-             </div>
-            </div>
-          <br><br>
-           <div class="progress">
-            <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valemain="0" aria-valuemax="100" style="width:50%">
-            (BOOTSTRAP) 50%
-            </div>
-          </div>
-          <br><br>
-          <div class="progress">
-              <div class="progress-bar" role="progressbar" aria-valuenow="30" aria-valemain="0" aria-valuemax="100" style="width:30%">
-              (JAVASCRIPT) 30%
-              </div>
-            </div>
-            <br><br>
-          <div class="progress">
-                <div class="progress-bar" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuwmax="100" style="width:30%">
-               (PYHTON FOR DATA SCIENCE) 30%
-               </div>
-               </div>
-               <br><br>
-          <div class="progress">
-                <div class="progress-bar" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="width:30%">
-                (GIT) 30%
-                </div>
-              </div>
-              <br><br>
-            <div class="progress">
-                <div class="progress-bar" role="progressbar;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:50%">
-                (DATA VISUALISATION) 50%
-                </div>
-              </div>
-              <br><br>
-            <div class="progress">
-                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:60%">
-                (PANDAS) 60%
-                </div>
-              </div>
-               <br><br>
-            <div class='progress'>
-                <div class='progress-bar' role='progressbar' aria-valuenow='20' ariavaluemin='0' aria-valuemax='100' style='width:20%'>
-                (LINUX) 20%
-                </div>
-               </div>
-      </div>
-
-</div>
-</section>
-</div>
-
-<div class="row">
-<section id="certifications" class="container-fluid">
-  <div class="hero-image4">
-      <div class="hero-text4">
-       <h1 style="font-size:40px; color:orangered;" class='revealOnScroll wow zoomInDown'>CERTIFICATES</h1> 
-      </div>
-      <div class="container-fluid">
-      <div class="container gallery-container-fluid">
-        <div class="tz-gallery">
-          <br><br><br><br><br>
-          <div class="row">
-            <div class="col-lg-4 col-md-4 col-sm-6">
-                <div class="card">
-                    <div class='img-res'>
-                    <a class="lightbox" href="images/Python For Data Science Coursera.PNG">
-                    <img src="images/Python For Data Science Coursera.PNG" alt="Park" class="card-img-top revealOnScroll wow flash" data-wow-delay="0.5s">
-                    </a>
-                    </div>
-                </div>
-            </div>
-             
-            <div class="col-lg-4 col-md-4 col-sm-6">
-                <div class="card">
-                    <div class="img-res">
-                    <a class="lightbox" href="images/Linux Workshop.PNG">
-                    <img src="images/Linux Workshop.PNG" alt="Park" class="card-img-top revealOnScroll wow flash" data-wow-delay="1s">
-                    </a>
-                    </div>
-                </div>
-            </div>
-             
-            <div class="col-lg-4">
-                <div class="card">
-                    <div class="img-res">
-                    <a class="lightbox" href="images/Data Visualisation With Python.PNG">
-                    <img src="images/Data Visualisation With Python.PNG" alt="Park" class="card-img-top revealOnScroll wow flash" data-wow-delay="1.5s">
-                    </a>
-                    </div>
-                </div>
-            </div>
         </div>
-        <br><br>
-          <div class="row"> 
-            <div class="col-lg-4">
-                <div class="card">
-                    <div class='img-res'>
-                    <a class="lightbox" href="images/Data Analysis Udemy.PNG">
-                    <img src="images/Data Analysis Udemy.PNG" alt="Park" class="card-img-top revealOnScroll wow flash" data-wow-delay="2s">
-                    </a>
-                    </div>
-                </div>
+
+
+        <!--Footer-->
+
+        <footer class="footer">
+            <div class="content-1170 center-relative">
+                <ul>
+                    <li class="left-footer-content">
+                        
+                    </li>
+                    <li class="center-footer-content">
+                        <a href="https://github.com/Rahul1582" target="blank">Github</a>
+                        <a href="https://www.linkedin.com/in/rahul-kumar-patro-479016184/" target="blank">Linkedin</a>
+                        <a href="https://www.instagram.com/r.a.h.u.l15.82/" target="blank">Instagram</a>
+                    </li>
+                    <li class="right-footer-contnet">
+                        
+                    </li>
+                  
+                </ul>
             </div>
-             
-            <div class="col-lg-4">
-                <div class="card">
-                    <div class="img-res">
-                    <a class="lightbox" href="images/Python for Data Science Cognitive classes.PNG">
-                    <img src="images/Python for Data Science Cognitive classes.PNG" alt="Park" class="card-img-top revealOnScroll wow flash" data-wow-delay="2.5s">
-                    </a>
-                    </div>
-                </div>
-            </div>
-             
-            <div class="col-lg-4">
-                <div class="card">
-                    <div class="img-res">
-                    <a class="lightbox" href="images/Certificate C++ Sololearn Image.jpg">
-                    <img src="images/Certificate C++ Sololearn Image.jpg" alt="Park" class="card-img-top revealOnScroll wow flash" data-wow-delay="3s">
-                    </a>
-                    </div>
-                </div>
-            </div>
+        </footer>
+
+
+
+        <div class="fixed scroll-top">
+            <img src="images/back_to_top.png" alt="Go Top">
         </div>
-      </div>
-
-      </div>
-</div>
-</div>
-</section>
-
-<section id="photo gallery" class="container-fluid">
-<div class="hero-image5">
-   <div class="hero-text5">
-  <h1 style="font-size:40px; color:brown" class='revealOnScroll wow zoomInDown'>GALLERY</h1>
-  </div>
-  <br>
-  <br><br><br><br><br>
-  <div class="container">
-      <div class="row">
-        <div class="row">
-                <div class="col-lg-4 col-md-3 col-xs-6 thumb">
-                    <a class="thumbnail" href="images/photo-1551350125-b3846dc59c0d.jpg" data-image-id="" data-toggle="modal" data-title=""
-                       data-image="photo-1551350125-b3846dc59c0d.jpg"
-                       data-target="#image-gallery">
-                        <img class="img-thumbnail"
-                             src="images/photo-1551350125-b3846dc59c0d.jpg"
-                             alt="Another alt text">
-                    </a>
-                </div>
-
-                <div class="col-lg-4 col-md-3 col-xs-6 thumb">
-                    <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title=""
-                       data-image="images/photo-1485518994577-6cd6324ade8f.jpg"
-                       data-target="#image-gallery">
-                        <img class="img-thumbnail"
-                             src="images/photo-1485518994577-6cd6324ade8f.jpg"
-                             alt="Another alt text" >
-                    </a>
-                </div>
-    
-                <div class="col-lg-4 col-md-3 col-xs-6 thumb">
-                    <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title=""
-                       data-image="images/photo-1514195385834-0853a6eda41c.jpg"
-                       data-target="#image-gallery">
-                        <img class="img-thumbnail"
-                             src="images/photo-1514195385834-0853a6eda41c.jpg"
-                             alt="Another alt text">
-                    </a>
-                </div>
-
-                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                    <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Test1"
-                       data-image="images/background-camera-copyspace-593322.jpg"
-                       data-target="#image-gallery">
-                        <img class="img-thumbnail"
-                             src="images/background-camera-copyspace-593322.jpg"
-                             alt="Another alt text" style=width:180%>
-                    </a>
-                </div>
-
-                <div class="col-lg-4 col-md-3 col-xs-6 thumb">
-                    <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Im so nice"
-                       data-image="images/photo-1507643179773-3e975d7ac515.jpg"
-                       data-target="#image-gallery">
-                        <img class="img-thumbnail"
-                             src="images/photo-1507643179773-3e975d7ac515.jpg"
-                             alt="Another alt text">
-                    </a>
-                </div>
-    
-                <div class="col-lg-4 col-md-3 col-xs-6 thumb">
-                    <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Im so nice"
-                       data-image="images/photo-1434295644475-aacd5f5dce1b.jpg"
-                       data-target="#image-gallery">
-                        <img class="img-thumbnail"
-                             src="images/photo-1434295644475-aacd5f5dce1b.jpg"
-                             alt="Another alt text">
-                    </a>
-                </div>
-                                    
-            <div class="modal fade" id="image-gallery" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-lg">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h4 class="modal-title" id="image-gallery-title"></h4>
-                            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span>
-                            </button>
-                        </div>
-                        <div class="modal-body">
-                            <img id="image-gallery-image" class="img-responsive col-md-12" src="">
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary float-left" id="show-previous-image"><i class="fa fa-arrow-left"></i>
-                            </button>
-    
-                            <button type="button" id="show-next-image" class="btn btn-secondary float-right"><i class="fa fa-arrow-right"></i>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-      </div>
-    </section>
-    </div>
 
 
-<div class="row">
-<section id="contact" class="container-fluid">
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/jquery.smartmenus.min.js"></script>
+        <script type="text/javascript" src="js/queryloader2.min.js"></script>
+        <script type="text/javascript" src="js/jquery.carouFredSel-6.0.0-packed.js"></script>
+        <script type="text/javascript" src="js/jquery.mousewheel.min.js"></script>
+        <script type="text/javascript" src="js/jquery.touchSwipe.min.js"></script>
+        <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+        <script type="text/javascript" src="js/jquery.nicescroll.min.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
 
- <div class="hero-image6">
-         <div class="container">
-           <br><br>
-          <div style="text-align:center">
-             <h1 class='revealOnScroll wow rubberBand'>CONTACT ME</h1>
-            <p style="font-size:35px; color:orangered;" class='revealOnScroll wow zoomInDown'>ANY QUERIES, SUGGESTIONS, PLEASE LET ME KNOW...<br>
-              Swing by for a cup of coffee, or leave me a message:
-            </p>
-          </div>
-          <div class="row">
-            
-            <div class="column">
-              <form action="/contact" method="POST" id='contact-form'>
-                <label for="fname">First Name</label>
-                <input type="text" id="fname" name="firstname" placeholder="Your name..">
-                <label for="lname">Last Name</label>
-                <input type="text" id="lname" name="Last Name" placeholder="Your Last Name...">
-                <label for="country">Country</label>
-                <select id="country" name="country">
-                  <option value="india">INDIA</option>
-                  <option value="canada">CANADA</option>
-                  <option value="usa">USA</option>
-                  <option value="australia">AUSTRALIA
-                  </option>
-                  <option value="europe">SAUDI ARABIA</option>  
-                  </select>
-                <label for="subject">Subject</label>
-                <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
-                <input type="submit" value="Submit">
-              </form>
-            </div>
-            <div class="column">
-                <img src="images/IMG_20190819_203105_380.jpg" style="width:100%">
-              </div>
-          </div>
-        </div>
-      </div>  
-     
-    </section>
-  </div>
-
-
-
-<link href="./Untitled-2_files/css" rel="stylesheet">
-
-<!-- jQuery library -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
-<!-- Proper JS -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-
-<!-- Latest compiled JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-<!--For Social Media Buttons-->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-<script src="js/wow.min.js"></script>
-              <script>
-              new WOW().init();
-              </script>
-
-<script>
-  
-$(window).on('load', function() { // makes sure the whole site is loaded
-        setTimeout(function(){ 
-            $('#status').fadeOut(2000); // will first fade out the loading animation 
-            $('#preloader').delay(1000).fadeOut(1000); // will fade out the white DIV that covers the website. 
-            $('body').delay(1000).css({'overflow':'visible'});
-         }, 0);
-   
-        })
-</script>
-
-</body>
+    </body>
 </html>
