@@ -759,7 +759,7 @@ body.blog .more-posts
 .single-post-shortcode .post-text
 {
     padding: 0 100px;
-    font-size: 24px;
+    font-size: 30px;
     line-height: 30px;
     color: #FAF8F3;
     font-weight: 400;
@@ -1589,3 +1589,150 @@ li.left-footer-content.mobile
 	border: 0;
 	box-shadow: 0 10px 10px -10px #8c8b8b inset;
 }
+
+
+/* For Skills */
+.container {
+  
+	max-width: 80rem;
+	margin: 0 auto;
+	padding: 0 2em 2em;
+}
+
+.heading {
+	font-family: 'Fredericka the Great', cursive;
+	font-size: 4rem;
+	font-weight: 500;
+	line-height: 1.5;
+	text-align: center;
+	padding: 3.5rem 0;
+	color: white;
+}
+
+.heading span {
+	display: block;
+}
+
+.gallery {
+	display: flex;
+	flex-wrap: wrap;
+	/* Compensate for excess margin on outer gallery flex items */
+    margin: -1rem -1rem; 
+    
+}
+
+.gallery-item {
+	/* Minimum width of 24rem and grow to fit available space */
+	 /* flex: 1 0 24rem;  */
+	/* Margin value should be half of grid-gap value as margins on flex items don't collapse */
+	 margin: 1rem; 
+	box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
+    /* overflow: hidden; */
+    height: 70%;
+ 
+}
+@media screen and (max-width: 755px) {
+    
+.gallery-item {
+	/* Minimum width of 24rem and grow to fit available space */
+	flex: 1 0 24rem;
+	/* Margin value should be half of grid-gap value as margins on flex items don't collapse */
+	 margin: 1rem; 
+	box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
+     
+     height: 80%;
+ 
+}
+}
+
+.gallery-image {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transition: transform 400ms ease-out;
+}
+
+.gallery-image:hover {
+	transform: scale(1.15);
+}
+
+/*
+
+The following rule will only run if your browser supports CSS grid.
+
+Remove or comment-out the code block below to see how the browser will fall-back to flexbox styling. 
+
+*/
+
+@supports (display: grid) {
+	.gallery {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
+		grid-gap: 2rem;
+	}
+
+	.gallery,
+	.gallery-item {
+		margin: 0;
+	}
+}
+
+
+@media screen and (max-width: 755px) {
+    
+        @supports (display: grid) {
+            .gallery {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+                grid-gap: 2rem;
+            }
+        
+            .gallery,
+            .gallery-item {
+                margin: 0;
+            }
+        }
+        
+    }
+
+    .intro{
+        font-size: 2.5em;
+    }
+
+    @media screen and (max-width: 755px)
+    {
+        .intro{
+            font-size: 1.5em;
+        }
+    }
+
+
+    /* Preloader */
+
+    #preloader {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color:black;
+        /* change if the mask should have another color then white */
+        z-index: 9999;
+        /* makes sure it stays on top */
+      }
+      #status {
+       height: 100%;
+       width: 100%;
+        position: absolute;
+        object-fit: cover;
+        /* centers the loading animation horizontally one the screen */
+       
+        /* centers the loading animation vertically one the screen */
+        background-image: url(images/preloader.gif);
+        /* path to your loading animation */
+        background-repeat: no-repeat;
+        background-position: center;
+        margin: 0px 0px 0px 0px;
+        /* is width and height divided by two */
+      }
